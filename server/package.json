@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server",
+    "start": "npx nodemon server.js",
     "server": "nodemon server"
+
   },
   "author": "",
   "license": "ISC",
