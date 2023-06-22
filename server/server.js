@@ -1,11 +1,13 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors'
 import { userRouter } from './model/routes/users.js';
 import { expenseRouter } from './model/routes/expenses.js';
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.use('/auth' , userRouter)
 app.use('/' , expenseRouter)
